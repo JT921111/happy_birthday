@@ -1,0 +1,85 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image.png" href="cake.png">
+    <title>Happy Birthday</title>
+    <style>
+      @media screen and (orientation: portrait) {
+        html{
+          width : 100vmin;
+          height : 100vmax;
+        }
+        body{
+          width : 100vmin;
+          height : 100vmax;
+        }
+        #gyroContain{
+          width : 100vmax;
+          height : 100vmin;
+          transform-origin: top left;
+          transform: rotate(90deg) translate(0,-100vmin);
+        }
+      }
+      @media screen and (orientation: landscape) {
+        html{
+          width : 100vmax;
+          height : 100vmin;
+        }
+        body{
+          width : 100vmax;
+          height : 100vmin;
+        } 
+        #gyroContain{
+          width : 100vmax;
+          height : 100vmin;
+        }
+      }
+      body {
+        background: #c7695d;
+        background-image: url(bgimg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: 180vh;
+        overflow: hidden;
+      }
+      .buttonstyle {
+        visibility: visible;
+        padding: 5vh 15vh;
+        font-size: 40px;
+        font-family: DFKai-sb;
+        border-radius: 2vh;
+      }
+      .emojistyle {
+        font-size: 8vh;
+        position: absolute;
+        top: 0vh;
+        left: 10vh;
+        visibility: hidden;
+      }
+    </style>
+    <script src="index.js"></script>
+  </head>
+  <body id="bg">
+    <div id="gyroContain">
+      <pre>
+
+
+
+      </pre>
+      <center>
+        <input class="buttonstyle" id="start" type="button" value="Start" onclick="start()">
+      </center>
+      <img src="pop.png" id="birth" width="36%" style="position: absolute;top: 35%;right: 12%;visibility: hidden;">
+      <span class="emojistyle" id="11">&#x1f973</span>
+      <span class="emojistyle" id="12">&#x1f973</span>
+      <span class="emojistyle" id="13">&#x1f973</span>
+      <span class="emojistyle" id="14">&#x1f973</span>
+      <img src="love.svg" class="emojistyle" id="21" width="80px">
+      <img src="love.svg" class="emojistyle" id="22" width="80px">
+      <img src="love.svg" class="emojistyle" id="23" width="80px">
+      <img src="love.svg" class="emojistyle" id="24" width="80px">
+      <img src="love.svg" class="emojistyle" id="25" width="80px">
+    </div>
+  </body>
+</html>
